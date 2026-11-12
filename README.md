@@ -1,9 +1,14 @@
----
-O adote.com foi um projeto desenvolvido como TCC, ele tem como objetivo mitigar a alta taxa de animais de rua e um possivel retorno as ruas.
-[Deploy FrontEnd](https://adotecom.vercel.app/)
+
+O **adote.com** foi um projeto desenvolvido como _TCC_, ele tem como objetivo mitigar a alta taxa de animais de rua e um possivel retorno as ruas.
+
+[Deploy do Projeto](https://adotecom.vercel.app/)
+
 Você pode rodar localmente com os seguintes passos:
-passo 1. Clonar o repositorio
-. Verifique se existe essas ferramentas no seu computador Git e node.js com os seguintes comando:
+
+**Passo 1**:
+Clonar o repositorio
+
+Verifique se existe essas ferramentas no seu computador _Git_ e _node.js_ com os seguintes comando:
 
 ```
 bash
@@ -23,9 +28,10 @@ saida exemplo: v26.7.0
 ```
 
 Se não tiver nenhum dos dois use:
-[node.js Download](https://nodejs.org/en/download)
+[node.js Download](https://nodejs.org/en/download), 
 [Git Download](https://gitforwindows.org/)
-passo 2. Apos certificar-se que existe, execute o comando do git:
+
+**Passo 2**: Apos certificar-se que existe, execute o comando do _git_:
 
 ```
 bash
@@ -34,24 +40,25 @@ git clone https://github.com/Mhornke/adotecom-frontend.git
 
 ```
 
-passo 3. Abir o projeto com um compilador, exemplo VScode
+**Passo 3**: Abir o projeto com um compilador, _exemplo VScode_
 caso não tenha [Vscode Download](https://code.visualstudio.com/download)
-passo 4. abrir o terminal dentro do compilador, exemplo do VScode: atalho ctrl + J
 
-2. Com o terminal aberto verifique em que pasta se encontra, se não estiver dentro da pasta do projeto siga os comandos:
+**Passo 4**: Abra o terminal dentro do compilador, _exemplo do VScode_: atalho **CTRL + J**
+
+Com o terminal aberto verifique em que pasta se encontra, se não estiver dentro da pasta do projeto siga os comandos:
 
 
-```bash
+```
 bash
 cd adotecom-frontend
 
 
 ```
 
-3. apos certificar-se que é a pasta correta execute os comandos:
+Apos certificar-se que é a pasta correta execute os comandos:
 
 
-```bash
+```
 bash
 npm install 
 
@@ -59,287 +66,288 @@ npm install
 ```
 
 
-```bash
+```
 bash 
 npm install expo
 
 ```
 
 
-```bash
+```
 bash 
 npx expo start
 ```
 
-Seu terminal mostrara uma mensagem  "OK to proceed? (y) então é só inserir Y e teclar ENTER
-e aperte CTRL + mouse 1 em " >Web: http://localhost:8081"
----
-<datails> 
-    <summary>Projeto: Adote.com</summary>
+Seu terminal mostrara uma mensagem  "OK to proceed? (y)" então é só inserir **Y** e teclar ENTER
+apos a build ser feita aperte **W** para executar no modo _web_ ou _aperte CTRL + mouse 1_ em " >Web: http://localhost:8081"
 
-    Bem-vindo à Wiki oficial do projeto Adote.com. Este documento serve como uma fonte central de informações sobre o projeto, seus objetivos, requisitos e especificações técnicas.
+<details> 
+    <summary> WIKI Projeto Adote.com</summary>
+    
 
-    ## 1. Visão Geral do Projeto
+Bem-vindo à Wiki oficial do projeto Adote.com. Este documento serve como uma fonte central de informações sobre o projeto, seus objetivos, requisitos e especificações técnicas.
 
-    **Adote.com** é uma plataforma digital projetada para ser uma ponte tecnológica entre animais em situação de abandono e potenciais adotantes. O objetivo é criar um ecossistema intuitivo e confiável que facilite a adoção responsável, centralizando informações de ONGs, abrigos e protetores independentes em um único local acessível.
+## 1. Visão Geral do Projeto
 
-    ## 2. O Problema e o Contexto Atual
+**Adote.com** é uma plataforma digital projetada para ser uma ponte tecnológica entre animais em situação de abandono e potenciais adotantes. O objetivo é criar um ecossistema intuitivo e confiável que facilite a adoção responsável, centralizando informações de ONGs, abrigos e protetores independentes em um único local acessível.
 
-    O Brasil enfrenta um grave problema de superpopulação de animais em situação de vulnerabilidade. A conexão entre quem resgata e quem deseja adotar é muitas vezes ineficiente, resultando em abrigos superlotados e longos períodos de espera para os animais.
+## 2. O Problema e o Contexto Atual
 
-    - **Cenário Atual:** Milhões de animais vivem abandonados nas ruas ou em abrigos pelo país.
-    - **Dados de 2024:** Segundo uma matéria da CNN Brasil, mais de 200 mil animais estão sob a tutela de ONGs ou protetores independentes. O Instituto Pet Brasil estima que cerca de **4,8 milhões de cães e gatos** estão em condições de vulnerabilidade no Brasil.
-    - **Fonte:** [CNN Brasil - Quase 5 milhões de pets estão em situação de vulnerabilidade no Brasil](https://www.cnnbrasil.com.br/nacional/quase-5-milhoes-de-pets-estao-em-situacao-de-vulnerabilidade-no-brasil/)
+O Brasil enfrenta um grave problema de superpopulação de animais em situação de vulnerabilidade. A conexão entre quem resgata e quem deseja adotar é muitas vezes ineficiente, resultando em abrigos superlotados e longos períodos de espera para os animais.
 
-    ## 3. Objetivos da Aplicação
+- **Cenário Atual:** Milhões de animais vivem abandonados nas ruas ou em abrigos pelo país.
+- **Dados de 2024:** Segundo uma matéria da CNN Brasil, mais de 200 mil animais estão sob a tutela de ONGs ou protetores independentes. O Instituto Pet Brasil estima que cerca de **4,8 milhões de cães e gatos** estão em condições de vulnerabilidade no Brasil.
+- **Fonte:** [CNN Brasil - Quase 5 milhões de pets estão em situação de vulnerabilidade no Brasil](https://www.cnnbrasil.com.br/nacional/quase-5-milhoes-de-pets-estao-em-situacao-de-vulnerabilidade-no-brasil/)
 
-    1. **Facilitar a Adoção Responsável:** Criar um processo claro e seguro para a adoção de animais em situação de abandono.
-    2. **Minimizar o Tempo de Espera:** Reduzir o tempo que um animal permanece em um abrigo ou lar temporário até encontrar uma família definitiva.
-    3. **Promover a Conexão:** Servir como uma ponte direta e eficaz entre animais que precisam de um lar e tutores em potencial.
-    4. **Centralizar Informações:** Reunir em um único espaço digital animais de diversas ONGs, abrigos e lares temporários de uma determinada localidade.
+## 3. Objetivos da Aplicação
 
-    ## 4. Relevância e Impacto Social
+1. **Facilitar a Adoção Responsável:** Criar um processo claro e seguro para a adoção de animais em situação de abandono.
+2. **Minimizar o Tempo de Espera:** Reduzir o tempo que um animal permanece em um abrigo ou lar temporário até encontrar uma família definitiva.
+3. **Promover a Conexão:** Servir como uma ponte direta e eficaz entre animais que precisam de um lar e tutores em potencial.
+4. **Centralizar Informações:** Reunir em um único espaço digital animais de diversas ONGs, abrigos e lares temporários de uma determinada localidade.
 
-    A retirada de animais das ruas e a promoção da adoção responsável geram um impacto positivo significativo em diversas áreas da sociedade.
+## 4. Relevância e Impacto Social
 
-    ### Saúde Pública
+A retirada de animais das ruas e a promoção da adoção responsável geram um impacto positivo significativo em diversas áreas da sociedade.
 
-    - **Redução de Zoonoses:** Diminui a transmissão de doenças como raiva, leptospirose e toxoplasmose.
-    - **Diminuição de Acidentes:** Reduz o número de acidentes de trânsito e ataques a pedestres.
-    - **Controle Populacional:** Ajuda a controlar a reprodução descontrolada de animais de rua.
+### Saúde Pública
 
-    ### Aspecto Ambiental
+- **Redução de Zoonoses:** Diminui a transmissão de doenças como raiva, leptospirose e toxoplasmose.
+- **Diminuição de Acidentes:** Reduz o número de acidentes de trânsito e ataques a pedestres.
+- **Controle Populacional:** Ajuda a controlar a reprodução descontrolada de animais de rua.
 
-    - **Menor Contaminação:** Reduz a quantidade de lixo revirado e dejetos em vias públicas, que podem contaminar o solo e a água.
+### Aspecto Ambiental
 
-    ### Qualidade de Vida
+- **Menor Contaminação:** Reduz a quantidade de lixo revirado e dejetos em vias públicas, que podem contaminar o solo e a água.
 
-    - **Bem-estar Animal:** Oferece uma vida digna, segura e saudável para os animais.
-    - **Bem-estar Coletivo:** Promove um ambiente urbano mais limpo, seguro e higiênico para toda a população.
+### Qualidade de Vida
 
-    ## 5. Público-Alvo e Personas
+- **Bem-estar Animal:** Oferece uma vida digna, segura e saudável para os animais.
+- **Bem-estar Coletivo:** Promove um ambiente urbano mais limpo, seguro e higiênico para toda a população.
 
-    ### Público-Alvo
+## 5. Público-Alvo e Personas
 
-    O Adote.com destina-se a abrigos, ONGs, protetores independentes e cidadãos engajados na causa animal que precisam de uma ferramenta centralizada e eficaz para divulgar animais disponíveis para adoção. A plataforma visa resolver a dificuldade de alcançar um público amplo e organizar o processo de adoção.
+### Público-Alvo
 
-    ### Personas
+O Adote.com destina-se a abrigos, ONGs, protetores independentes e cidadãos engajados na causa animal que precisam de uma ferramenta centralizada e eficaz para divulgar animais disponíveis para adoção. A plataforma visa resolver a dificuldade de alcançar um público amplo e organizar o processo de adoção.
 
-    > Nome: Vanessa
-    > 
-    > - **Idade:** 28
-    > - **Profissão:** Veterinária / Mantenedora de um abrigo temporário
-    > - **Objetivo:** Encontrar um lar definitivo o mais rápido possível para os animais que resgata.
-    > - **Frustração:** Dificuldade para encontrar adotantes qualificados e baixo engajamento nas redes sociais do abrigo.
-    > - **Citação:** *“Eu cuido de muitos animais ao mesmo tempo e, às vezes, é difícil lembrar quem já foi adotado ou quem ainda precisa de cuidados. Seria ótimo ter uma plataforma que me ajudasse a organizar tudo em um só lugar.”*
+### Personas
 
-    > Nome: João
-    > 
-    > - **Idade:** 26
-    > - **Profissão:** Atendente de mercado
-    > - **Objetivo:** Adotar um pet para fazer companhia para seus outros animais de estimação.
-    > - **Frustração:** Dificuldade em encontrar abrigos próximos e publicações com informações detalhadas e confiáveis sobre os animais.
-    > - **Citação:** *"Sempre quis adotar um bichinho, mas nunca sei onde procurar ou se ele vai se adaptar à minha rotina. Queria um lugar que mostrasse tudo direitinho, com confiança."*
+> Nome: Vanessa
+> 
+> - **Idade:** 28
+> - **Profissão:** Veterinária / Mantenedora de um abrigo temporário
+> - **Objetivo:** Encontrar um lar definitivo o mais rápido possível para os animais que resgata.
+> - **Frustração:** Dificuldade para encontrar adotantes qualificados e baixo engajamento nas redes sociais do abrigo.
+> - **Citação:** *“Eu cuido de muitos animais ao mesmo tempo e, às vezes, é difícil lembrar quem já foi adotado ou quem ainda precisa de cuidados. Seria ótimo ter uma plataforma que me ajudasse a organizar tudo em um só lugar.”*
 
-    ## 6. Requisitos do Sistema
+> Nome: João
+> 
+> - **Idade:** 26
+> - **Profissão:** Atendente de mercado
+> - **Objetivo:** Adotar um pet para fazer companhia para seus outros animais de estimação.
+> - **Frustração:** Dificuldade em encontrar abrigos próximos e publicações com informações detalhadas e confiáveis sobre os animais.
+> - **Citação:** *"Sempre quis adotar um bichinho, mas nunca sei onde procurar ou se ele vai se adaptar à minha rotina. Queria um lugar que mostrasse tudo direitinho, com confiança."*
 
-    ### Requisitos Funcionais (RF)
+## 6. Requisitos do Sistema
 
-    - **RF01:** O sistema deve permitir o cadastro de usuários (adotantes e gestores de abrigo).
-    - **RF02:** Os usuários devem poder visualizar listas de animais disponíveis para adoção.
-    - **RF03:** O usuário deve poder enviar uma solicitação de adoção para um animal.
-    - **RF04:** O usuário deve poder visualizar o status de seus pedidos de adoção.
-    - **RF05:** O usuário deve poder cadastrar animais.
-    - **RF06:** O gestor de abrigo deve poder aceitar ou recusar solicitações de adoção.
+### Requisitos Funcionais (RF)
 
-    ### Requisitos Não Funcionais (RNF)
+- **RF01:** O sistema deve permitir o cadastro de usuários (adotantes e gestores de abrigo).
+- **RF02:** Os usuários devem poder visualizar listas de animais disponíveis para adoção.
+- **RF03:** O usuário deve poder enviar uma solicitação de adoção para um animal.
+- **RF04:** O usuário deve poder visualizar o status de seus pedidos de adoção.
+- **RF05:** O usuário deve poder cadastrar animais.
+- **RF06:** O gestor de abrigo deve poder aceitar ou recusar solicitações de adoção.
 
-    - **RNF01:** O sistema deve ser responsivo e compatível com celulares, tablets e computadores.
-    - **RNF02:** O sistema deve garantir a segurança e a confidencialidade dos dados dos usuários.
-    - **RNF03:** A interface deve ser intuitiva, acessível e fácil de usar.
-    - **RNF04:** O sistema deve notificar os usuários e gestores sobre as atualizações nos status dos pedidos.
-    - **RNF05:** O sistema deve ter alta disponibilidade (funcionar 24/7).
+### Requisitos Não Funcionais (RNF)
 
-    ### Critérios de Aceite
+- **RNF01:** O sistema deve ser responsivo e compatível com celulares, tablets e computadores.
+- **RNF02:** O sistema deve garantir a segurança e a confidencialidade dos dados dos usuários.
+- **RNF03:** A interface deve ser intuitiva, acessível e fácil de usar.
+- **RNF04:** O sistema deve notificar os usuários e gestores sobre as atualizações nos status dos pedidos.
+- **RNF05:** O sistema deve ter alta disponibilidade (funcionar 24/7).
 
-    - **Desempenho:** O tempo de resposta para exibição das listagens de animais deve ser entre 2 e 3 segundos.
-    - **Carregamento:** O tempo de carregamento das páginas não deve ultrapassar 1 segundo em conexões de 10 Mbps.
-    - **Usabilidade:** A plataforma deve ser fácil de navegar para todos os perfis de usuário.
-    - **Confiabilidade:** O sistema deve ser estável e garantir a integridade dos dados.
+### Critérios de Aceite
 
-    ## 7. Stakeholders
+- **Desempenho:** O tempo de resposta para exibição das listagens de animais deve ser entre 2 e 3 segundos.
+- **Carregamento:** O tempo de carregamento das páginas não deve ultrapassar 1 segundo em conexões de 10 Mbps.
+- **Usabilidade:** A plataforma deve ser fácil de navegar para todos os perfis de usuário.
+- **Confiabilidade:** O sistema deve ser estável e garantir a integridade dos dados.
 
-    ### 🧍‍♂️ Quem Busca (Adotantes)
+## 7. Stakeholders
 
-    Pessoas que querem encontrar um animal de estimação de forma simples e segura.
+### 🧍‍♂️ Quem Busca (Adotantes)
 
-    - **Necessidades:** Interface fácil, filtros de busca, informações completas dos animais, processo de adoção simplificado e acompanhamento do pedido.
+Pessoas que querem encontrar um animal de estimação de forma simples e segura.
 
-    ### 🏠 Quem Anuncia (Abrigos, ONGs, Protetores)
+- **Necessidades:** Interface fácil, filtros de busca, informações completas dos animais, processo de adoção simplificado e acompanhamento do pedido.
 
-    Instituições e pessoas que precisam divulgar animais para adoção de forma organizada e eficaz.
+### 🏠 Quem Anuncia (Abrigos, ONGs, Protetores)
 
-    - **Necessidades:** Ferramentas para cadastrar e gerenciar animais, acompanhar pedidos, validar adotantes e obter relatórios.
+Instituições e pessoas que precisam divulgar animais para adoção de forma organizada e eficaz.
 
-    ### ❤️ Quem Apoia (Parceiros, Empresas, Voluntários)
+- **Necessidades:** Ferramentas para cadastrar e gerenciar animais, acompanhar pedidos, validar adotantes e obter relatórios.
 
-    Pessoas e organizações que desejam contribuir com a causa animal.
+### ❤️ Quem Apoia (Parceiros, Empresas, Voluntários)
 
-    - **Necessidades:** Transparência no uso do apoio, visibilidade da contribuição, facilidade de contato e acompanhamento do impacto gerado.
+Pessoas e organizações que desejam contribuir com a causa animal.
 
-    ## 8. Proposta de Inovação e Integração
+- **Necessidades:** Transparência no uso do apoio, visibilidade da contribuição, facilidade de contato e acompanhamento do impacto gerado.
 
-    Um diferencial do projeto é a integração com o **GestãoProPet**, uma proposta de sistema de gestão de abrigos desenvolvida em paralelo. A integração permitirá que abrigos que utilizam o GestãoProPet publiquem seus animais diretamente na plataforma Adote.com, automatizando a divulgação e ampliando o alcance para encontrar novos lares.
+## 8. Proposta de Inovação e Integração
 
-    - **Referência:** [Artigo sobre o GestãoProPet](https://www.google.com/search?q=https://medium.com/%40rodrigogastaud97/gest%C3%A3opropet-3d482b4235ac)
+Um diferencial do projeto é a integração com o **GestãoProPet**, uma proposta de sistema de gestão de abrigos desenvolvida em paralelo. A integração permitirá que abrigos que utilizam o GestãoProPet publiquem seus animais diretamente na plataforma Adote.com, automatizando a divulgação e ampliando o alcance para encontrar novos lares.
 
-    ## 9. Tecnologias Utilizadas (Tech Stack)
+- **Referência:** [Artigo sobre o GestãoProPet](https://www.google.com/search?q=https://medium.com/%40rodrigogastaud97/gest%C3%A3opropet-3d482b4235ac)
 
-    A plataforma Adote.com é construída sobre uma arquitetura moderna, separando as responsabilidades entre o frontend, o backend e os serviços de infraestrutura.
+## 9. Tecnologias Utilizadas (Tech Stack)
 
-    ### Frontend (Aplicação Cliente)
+A plataforma Adote.com é construída sobre uma arquitetura moderna, separando as responsabilidades entre o frontend, o backend e os serviços de infraestrutura.
 
-    - **Framework Principal:** React Native com Expo
-    - **Linguagem:** TypeScript
-    - **Navegação:** Expo Router
-    - **Gerenciamento de Formulários:** React Hook Form
-    - **Componentes de UI:** React Native Paper
-    - **Requisições HTTP:** Axios
-    - **Manipulação de Imagens:**
-        - `expo-image-picker`, `expo-file-system`, `expo-image-manipulator` (Mobile)
-        - `browser-image-compression` (Web)
-    - **Armazenamento Local:** AsyncStorage
-    - **Alertas e Diálogos (Web):** SweetAlert2
+### Frontend (Aplicação Cliente)
 
-    **Acessar:**
+- **Framework Principal:** React Native com Expo
+- **Linguagem:** TypeScript
+- **Navegação:** Expo Router
+- **Gerenciamento de Formulários:** React Hook Form
+- **Componentes de UI:** React Native Paper
+- **Requisições HTTP:** Axios
+- **Manipulação de Imagens:**
+    - `expo-image-picker`, `expo-file-system`, `expo-image-manipulator` (Mobile)
+    - `browser-image-compression` (Web)
+- **Armazenamento Local:** AsyncStorage
+- **Alertas e Diálogos (Web):** SweetAlert2
 
-    Front [Adote.com](https://adotecom.vercel.app/)
-    ### Backend (API)
+**Acessar:**
 
-    - **Ambiente de Execução:** Node.js
-    - **Linguagem:** TypeScript
-    - **Arquitetura:** API RESTful
-    - **ORM (Object-Relational Mapping):** Prisma
-    - **Autenticação e Segurança:**
-        - JSON Web Tokens (JWT) para gerenciamento de sessões.
-        - Bcrypt para hashing de senhas.
+Front [Adote.com](https://adotecom.vercel.app/)
+### Backend (API)
 
-    **Acessar:**
+- **Ambiente de Execução:** Node.js
+- **Linguagem:** TypeScript
+- **Arquitetura:** API RESTful
+- **ORM (Object-Relational Mapping):** Prisma
+- **Autenticação e Segurança:**
+    - JSON Web Tokens (JWT) para gerenciamento de sessões.
+    - Bcrypt para hashing de senhas.
 
-    [API GestãoProPet](https://api-gestao-pro-pet.vercel.app/) 
+**Acessar:**
 
-    [API Adote.com](https://adote-com2-0-api.vercel.app/)
-    ### Infraestrutura e Serviços
+[API GestãoProPet](https://api-gestao-pro-pet.vercel.app/) 
 
-    - **Hospedagem (Frontend e Backend):** Vercel
-    - **Banco de Dados:** PostgreSQL (hospedado no Neon)
-    - **Armazenamento de Mídia:** Cloudinary
+[API Adote.com](https://adote-com2-0-api.vercel.app/)
+### Infraestrutura e Serviços
 
-    ## 10. Especificação Técnica
+- **Hospedagem (Frontend e Backend):** Vercel
+- **Banco de Dados:** PostgreSQL (hospedado no Neon)
+- **Armazenamento de Mídia:** Cloudinary
 
-    ### Modelo de Dados
+## 10. Especificação Técnica
 
-    ### 🔹 Tabela: `Especie`
+### Modelo de Dados
 
-    - **id:** `INT` (PK)
-    - **nome:** `VARCHAR`
+### 🔹 Tabela: `Especie`
 
-    ### 🔹 Tabela: `Animal`
+- **id:** `INT` (PK)
+- **nome:** `VARCHAR`
 
-    - **id:** `INT` (PK)
-    - **nome:** `VARCHAR`
-    - **idade:** `INT`
-    - **descricao:** `TEXT`
-    - **porte:** `ENUM('pequeno', 'medio', 'grande')`
-    - **sexo:** `ENUM('macho', 'femea')`
-    - **especie_id:** `INT` (FK para `Especie`)
-    - **abrigo_id:** `INT` (FK para `Abrigo`)
+### 🔹 Tabela: `Animal`
 
-    ### 🔹 Tabela: `Abrigo`
+- **id:** `INT` (PK)
+- **nome:** `VARCHAR`
+- **idade:** `INT`
+- **descricao:** `TEXT`
+- **porte:** `ENUM('pequeno', 'medio', 'grande')`
+- **sexo:** `ENUM('macho', 'femea')`
+- **especie_id:** `INT` (FK para `Especie`)
+- **abrigo_id:** `INT` (FK para `Abrigo`)
 
-    - **id:** `INT` (PK)
-    - **nome:** `VARCHAR`
-    - **descricao:** `TEXT`
+### 🔹 Tabela: `Abrigo`
 
-    ### 🔹 Tabela: `Foto`
+- **id:** `INT` (PK)
+- **nome:** `VARCHAR`
+- **descricao:** `TEXT`
 
-    - **id:** `INT` (PK)
-    - **descricao:** `VARCHAR`
-    - **codigoFoto:** `TEXT` (URL da imagem)
-    - **animal_id:** `INT` (FK para `Animal`)
+### 🔹 Tabela: `Foto`
 
-    ### 🔹 Tabela: `Usuario`
+- **id:** `INT` (PK)
+- **descricao:** `VARCHAR`
+- **codigoFoto:** `TEXT` (URL da imagem)
+- **animal_id:** `INT` (FK para `Animal`)
 
-    - **id:** `INT` (PK)
-    - **nome:** `VARCHAR`
-    - **email:** `VARCHAR` (UNIQUE)
-    - **senha:** `VARCHAR`
+### 🔹 Tabela: `Usuario`
 
-    ### 🔹 Tabela: `Pedido`
+- **id:** `INT` (PK)
+- **nome:** `VARCHAR`
+- **email:** `VARCHAR` (UNIQUE)
+- **senha:** `VARCHAR`
 
-    - **id:** `INT` (PK)
-    - **resposta:** `ENUM('Aprovado', 'Rejeitado', 'Pendente')`
-    - **descricao:** `TEXT`
-    - **animal_id:** `INT` (FK para `Animal`)
-    - **usuario_id:** `INT` (FK para `Usuario`)
+### 🔹 Tabela: `Pedido`
 
-    ### Diagrama de Caso de Uso
+- **id:** `INT` (PK)
+- **resposta:** `ENUM('Aprovado', 'Rejeitado', 'Pendente')`
+- **descricao:** `TEXT`
+- **animal_id:** `INT` (FK para `Animal`)
+- **usuario_id:** `INT` (FK para `Usuario`)
 
-    ### Atores
+### Diagrama de Caso de Uso
 
-    - **Usuário/Adotante:** Pessoa que busca um animal para adotar.
-    - **Gestor (Abrigo/ONG):** Instituição que gerencia os animais.
+### Atores
 
-    ### Casos de Uso do Usuário
+- **Usuário/Adotante:** Pessoa que busca um animal para adotar.
+- **Gestor (Abrigo/ONG):** Instituição que gerencia os animais.
 
-    - Registrar-se no sistema.
-    - Efetuar login.
-    - Buscar animais por filtros.
-    - Visualizar detalhes de um animal.
-    - Solicitar adoção de um animal.
-    - Acompanhar o status de seus pedidos de adoção.
+### Casos de Uso do Usuário
 
-    ### Casos de Uso do Gestor
+- Registrar-se no sistema.
+- Efetuar login.
+- Buscar animais por filtros.
+- Visualizar detalhes de um animal.
+- Solicitar adoção de um animal.
+- Acompanhar o status de seus pedidos de adoção.
 
-    - Adicionar, editar e remover animais do catálogo.
-    - Visualizar todos os pedidos de adoção recebidos.
-    - Aprovar ou rejeitar um pedido de adoção.
+### Casos de Uso do Gestor
 
-    ## 11. Estratégia de Monetização
+- Adicionar, editar e remover animais do catálogo.
+- Visualizar todos os pedidos de adoção recebidos.
+- Aprovar ou rejeitar um pedido de adoção.
 
-    A sustentabilidade da plataforma será buscada através dos seguintes meios:
+## 11. Estratégia de Monetização
 
-    ### Anúncios
+A sustentabilidade da plataforma será buscada através dos seguintes meios:
 
-    - **Modelo:** Empresas compram espaços de banner na plataforma.
-    - **Ganhos:** Pagamento mensal por visibilidade (destaque na home, posts patrocinados).
+### Anúncios
 
-    ### Plano para Pet Shops
+- **Modelo:** Empresas compram espaços de banner na plataforma.
+- **Ganhos:** Pagamento mensal por visibilidade (destaque na home, posts patrocinados).
 
-    - **Modelo:** Assinatura mensal que oferece maior visibilidade para pet shops, permitindo a publicação de animais e produtos.
-    - **Ganhos:** Taxa de assinatura e comissão sobre vendas geradas por links/cupons.
+### Plano para Pet Shops
 
-    ### Parcerias Estratégicas
+- **Modelo:** Assinatura mensal que oferece maior visibilidade para pet shops, permitindo a publicação de animais e produtos.
+- **Ganhos:** Taxa de assinatura e comissão sobre vendas geradas por links/cupons.
 
-    - **Modelo:** Colaboração com empresas, influenciadores, clínicas veterinárias e órgãos públicos (prefeituras, centros de zoonose).
-    - **Ganhos:** Pagamento por demanda, visibilidade, ou através de ações conjuntas como kits de brindes para adotantes.
+### Parcerias Estratégicas
 
-    ## 12. Como Começar (Ambiente de Desenvolvimento)
+- **Modelo:** Colaboração com empresas, influenciadores, clínicas veterinárias e órgãos públicos (prefeituras, centros de zoonose).
+- **Ganhos:** Pagamento por demanda, visibilidade, ou através de ações conjuntas como kits de brindes para adotantes.
 
-    Para configurar o projeto localmente ou adicionar o repositório a um projeto existente:
+## 12. Como Começar (Ambiente de Desenvolvimento)
 
-    ```
-    cd existing_repo
-    git remote add origin https://gitlab.com/senac-projetos-de-desenvolvimento/2025-dieizon-oliveira-e-matheus-hornke/adote.com.git
-    git branch -M main
-    git push -uf origin main
+Para configurar o projeto localmente ou adicionar o repositório a um projeto existente:
 
-    ```
+```
+cd existing_repo
+git remote add origin https://gitlab.com/senac-projetos-de-desenvolvimento/2025-dieizon-oliveira-e-matheus-hornke/adote.com.git
+git branch -M main
+git push -uf origin main
 
-    ## 13. Como Contribuir
+```
 
-    Estamos abertos a contribuições! Se você deseja ajudar, por favor, verifique o nosso rastreador de *issues* para ver as tarefas abertas. Para propor uma nova funcionalidade ou correção, crie uma nova *merge request* e descreva as alterações realizadas.
+## 13. Como Contribuir
 
-    ## 14. Metodos
-    Trabalhamos atrazes da plataforma Miro fazendo o [Diagrama de classes de Uso](https://miro.com/app/board/uXjVIC--7sM=/?share_link_id=762462508036) e [Quadro kanban](https://miro.com/app/board/uXjVIDNQDPY=/)
+Estamos abertos a contribuições! Se você deseja ajudar, por favor, verifique o nosso rastreador de *issues* para ver as tarefas abertas. Para propor uma nova funcionalidade ou correção, crie uma nova *merge request* e descreva as alterações realizadas.
+
+## 14. Metodos
+Trabalhamos atrazes da plataforma Miro fazendo o [Diagrama de classes de Uso](https://miro.com/app/board/uXjVIC--7sM=/?share_link_id=762462508036) e [Quadro kanban](https://miro.com/app/board/uXjVIDNQDPY=/)
 </details>
