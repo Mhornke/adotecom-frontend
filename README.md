@@ -151,7 +151,7 @@ Front [Adote.com](https://adotecom.vercel.app/)
 
 [API GestãoProPet](https://api-gestao-pro-pet.vercel.app/) 
 
-[API Adote.com](https://api-adocao-omega.vercel.app/)
+[API Adote.com](https://adote-com2-0-api.vercel.app/)
 ### Infraestrutura e Serviços
 
 - **Hospedagem (Frontend e Backend):** Vercel
